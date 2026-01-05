@@ -13,8 +13,7 @@ CONTAINER="opbeans-go"
 }
 
 @test "create test container" {
-	run docker compose up -d
-	run docker compose logs -f &
+	run docker compose up
 	assert_success
 }
 
