@@ -14,6 +14,7 @@ CONTAINER="opbeans-go"
 
 @test "create test container" {
 	run docker compose up -d
+	run docker compose logs -f &
 	assert_success
 }
 
